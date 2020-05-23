@@ -137,7 +137,7 @@
 
 </head>
 <body>
-<div class="jumbotron"> <!--introduction-->
+<div class="jumbotron" th:replace="fragments/jumbotron :: jumbotron"> <!--introduction-->
   <div class="container">
     <h1>HTML page</h1>
     <p class="lead" th:text="#{index.courses.tagline}">Beatiful pictures of the nature</p>
@@ -379,6 +379,10 @@
       </div>
     </div>
   </div>
+</div>
+
+<div class="container" th:replace="fragments/footer :: footer">
+  <p>footer</p>
 </div>
 
 </body>
