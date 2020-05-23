@@ -147,7 +147,7 @@
   <div class="row">
     <div class="col-md-6">
       <img src="../static/images/nature1.jpg" class="center-block"
-      th:src="../static/images/eagle.jpg"/><!--at runtime will be-->
+      th:src="@{../static/images/eagle.jpg}"/>
     </div>
     <div class="col-md-6">
       <div>
@@ -166,7 +166,7 @@
   </div>
   <div class="row">
     <div class="col-md-offset-6 col-md-4">
-      <button class="btn-success">Buy Now!</button>
+      <button class="btn-success" th:text="#{button.translation}">Buy Now!</button>
     </div>
   </div>
 </div>
